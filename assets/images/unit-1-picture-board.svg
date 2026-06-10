@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title">
+  <title id="title">Four hobbies: origami, reading comics, riding a roller coaster, and painting</title>
+  <rect width="720" height="360" rx="28" fill="#fffefa"/>
+  <g stroke="#e4e1d8" stroke-width="3"><path d="M180 18v324M360 18v324M540 18v324"/></g>
+  <g font-family="Arial" font-weight="700" font-size="20" text-anchor="middle" fill="#142a3b">
+    <g><circle cx="32" cy="32" r="20" fill="#dff3ee"/><text x="32" y="39">1</text></g>
+    <g><circle cx="212" cy="32" r="20" fill="#fbe8e1"/><text x="212" y="39">2</text></g>
+    <g><circle cx="392" cy="32" r="20" fill="#fbf1d3"/><text x="392" y="39">3</text></g>
+    <g><circle cx="572" cy="32" r="20" fill="#e7eef8"/><text x="572" y="39">4</text></g>
+  </g>
+  <g transform="translate(20 76)">
+    <rect x="22" y="170" width="118" height="14" rx="7" fill="#9b7455"/>
+    <path d="M51 161l42-70 38 70-38-23z" fill="#e9795f"/><path d="M51 161l42-23 38 23-38 9z" fill="#1f8a7b"/><path d="M93 91l15 47-15 17-15-17z" fill="#e8b949"/>
+    <circle cx="82" cy="55" r="22" fill="#f0c7a5"/><path d="M59 54q23-33 47 0" fill="#142a3b"/><path d="M82 78v60M82 101L49 132M82 101l38 30" stroke="#547aa5" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(194 72)">
+    <circle cx="78" cy="55" r="24" fill="#d8a77c"/><path d="M52 52q26-32 52 2" fill="#533a2d"/><path d="M78 81v75" stroke="#e9795f" stroke-width="26" stroke-linecap="round"/>
+    <path d="M22 112l55 17v75l-55-17zM134 112l-57 17v75l57-17z" fill="#fff" stroke="#547aa5" stroke-width="4"/>
+    <path d="M36 132h25M36 146h31M96 133h23M94 148h29" stroke="#e8b949" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(374 75)">
+    <path d="M15 180q35-132 72-40t73-45" fill="none" stroke="#547aa5" stroke-width="10"/>
+    <g transform="translate(58 122)"><rect width="70" height="32" rx="9" fill="#e9795f"/><circle cx="18" cy="34" r="9" fill="#142a3b"/><circle cx="54" cy="34" r="9" fill="#142a3b"/><circle cx="22" cy="-12" r="12" fill="#f0c7a5"/><circle cx="49" cy="-12" r="12" fill="#d8a77c"/><path d="M22 0v18M49 0v18" stroke="#fff" stroke-width="7"/></g>
+    <circle cx="24" cy="180" r="9" fill="#e8b949"/><circle cx="154" cy="92" r="9" fill="#e8b949"/>
+  </g>
+  <g transform="translate(560 74)">
+    <rect x="29" y="49" width="86" height="126" rx="8" fill="#fff" stroke="#9b7455" stroke-width="7"/>
+    <circle cx="72" cy="32" r="21" fill="#f0c7a5"/><path d="M50 29q22-28 44 2" fill="#142a3b"/><path d="M72 55v55M72 78L34 112M72 78l42 31" stroke="#1f8a7b" stroke-width="11" stroke-linecap="round"/>
+    <path d="M45 145q20-45 49-5t12 27H45z" fill="#547aa5"/><circle cx="63" cy="139" r="12" fill="#e8b949"/><path d="M113 107l19 58" stroke="#9b7455" stroke-width="6"/><path d="M128 158l14 25" stroke="#e9795f" stroke-width="11" stroke-linecap="round"/>
+  </g>
+</svg>

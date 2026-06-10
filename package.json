@@ -1,0 +1,12 @@
+{
+  "name": "miqyas-central-exam",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check questions.js && node --check app.js && node --check admin.js && node --check server.js"
+  }
+}

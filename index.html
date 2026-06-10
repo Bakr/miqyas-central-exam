@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#142a3b" />
+    <meta name="description" content="محاكي الاختبارات المركزية للغة الإنجليزية للصف السادس الابتدائي" />
+    <title>مِقياس | محاكي الاختبارات المركزية</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="التنقل الرئيسي">
+        <a class="brand" href="#dashboard" data-nav="dashboard" aria-label="مِقياس - الرئيسية">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span><strong>مِقياس</strong><small>نتعلم بثقة</small></span>
+        </a>
+        <nav class="side-nav">
+          <button class="nav-item active" data-nav="dashboard"><span class="nav-icon">▦</span><span>الرئيسية</span></button>
+          <button class="nav-item" data-nav="tests"><span class="nav-icon">✓</span><span>الاختبارات</span></button>
+          <button class="nav-item" data-nav="progress"><span class="nav-icon">↗</span><span>تقدمي</span></button>
+          <button class="nav-item" data-nav="history"><span class="nav-icon">↺</span><span>السجل</span></button>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-icon">A+</span>
+          <strong>هدف هذا الأسبوع</strong>
+          <p>أكمل اختبارين وراجع أخطاءك.</p>
+          <div class="mini-progress"><span id="weekly-progress"></span></div>
+        </div>
+        <button class="sidebar-feedback" data-open-feedback><span>✎</span><strong>أرسل ملاحظة</strong><small>اقتراح أو مشكلة واجهتك</small></button>
+        <p class="storage-note">تُحفظ نتائجك وتُستخدم مؤشرات الأداء في لوحة المتابعة التعليمية.</p>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <div><p class="eyebrow" id="page-eyebrow">لوحة الطالب</p><h1 id="page-title">مساء الخير، يا بطل</h1></div>
+          <div class="profile-chip"><span class="profile-avatar" id="profile-avatar">6</span><span><strong id="profile-name">طالب الصف السادس</strong><small>Top Goal 2</small></span></div>
+        </header>
+        <div id="app-view" tabindex="-1"></div>
+      </main>
+      <nav class="mobile-nav" aria-label="التنقل على الجوال">
+        <button class="active" data-nav="dashboard"><span>⌂</span>الرئيسية</button>
+        <button data-nav="tests"><span>✓</span>اختبار</button>
+        <button class="mobile-start" data-start="central" aria-label="ابدأ اختبارًا">ابدأ</button>
+        <button data-nav="progress"><span>↗</span>تقدمي</button>
+        <button data-nav="history"><span>↺</span>السجل</button>
+      </nav>
+      <button class="mobile-feedback" data-open-feedback aria-label="أرسل ملاحظة"><span>✎</span></button>
+    </div>
+    <div id="modal-root"></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="questions.js?v=4"></script>
+    <script src="app.js?v=4"></script>
+  </body>
+</html>
