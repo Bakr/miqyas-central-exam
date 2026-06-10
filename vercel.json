@@ -45,7 +45,7 @@
     },
     {
       "src": "/admin/[^/]+$",
-      "dest": "server.js"
+      "dest": "/admin.html"
     },
     {
       "handle": "filesystem"
