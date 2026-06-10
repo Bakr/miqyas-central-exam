@@ -7,7 +7,7 @@ const port = Number(process.env.PORT || 4173);
 const root = __dirname;
 const adminToken = process.env.ADMIN_TOKEN || "miqyas-8N4k2Q7p";
 const adminRoute = `/admin/${encodeURIComponent(adminToken)}`;
-const dataDir = path.join(root, "data");
+const dataDir = path.join(process.env.VERCEL ? "/tmp" : root, "data");
 const dataFile = path.join(dataDir, "analytics.json");
 const allowedEvents = new Set(["student_register", "session_start", "page_view", "exam_start", "exam_complete", "feedback_submit"]);
 const publicFiles = new Set(["index.html", "styles.css", "questions.js", "app.js", "admin.css", "admin.js"]);
@@ -276,7 +276,7 @@ function serveFile(res, fileName) {
   });
 }
 
-http.createServer(async (req, res) => {
+async function handleRequest(req, res) {
   const url = new URL(req.url, `http://${req.headers.host || "127.0.0.1"}`);
   const requestPath = decodeURIComponent(url.pathname);
 
@@ -316,7 +316,13 @@ http.createServer(async (req, res) => {
     return;
   }
   serveFile(res, relative);
-}).listen(port, process.env.HOST || "0.0.0.0", () => {
-  console.log(`Miqyas is running at http://127.0.0.1:${port}`);
-  console.log(`Admin dashboard: http://127.0.0.1:${port}${adminRoute}`);
-});
+}
+
+if (require.main === module) {
+  http.createServer(handleRequest).listen(port, process.env.HOST || "0.0.0.0", () => {
+    console.log(`Miqyas is running at http://127.0.0.1:${port}`);
+    console.log(`Admin dashboard: http://127.0.0.1:${port}${adminRoute}`);
+  });
+}
+
+module.exports = handleRequest;
